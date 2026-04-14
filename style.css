@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .textosobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textosobre img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #d1cfcfd8;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: green;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+header h1 {
+    color: orange;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(8, 224, 8);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(251, 175, 34);
+    transition: 0.5s;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.textosobre {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.textosobre img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.textosobre .texto {
+    flex: 1;
+    text-align: left;
+    font-size: 20px;
+}
+
+section div a{
+    color: orange;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.listeventos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.eventocard {
+    background: green;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    min-height: 200px;
+    text-align: justify;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    font-size: 20px;
+}
+
+.eventocard:hover {
+    transform: scale(1.05);
+}
+
+.eventocard img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.listcursos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.c{
+    color: black;
+}
+
+.card {
+    background: orange;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.text{
+    text-align: justify;
+    color: black;
+    font-size: 18px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.contatos form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.contatos input, .contatos textarea {
+    padding: 12px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contatos button {
+    background: orange;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.contatos button:hover {
+    background: green;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    margin-top: 20px;
+}
